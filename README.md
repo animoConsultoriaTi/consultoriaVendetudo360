@@ -5,27 +5,27 @@
 ## Iniciar Projeto
 
 ```cl
-	# Clonar o repositório
-	git clone https://github.com/animoConsultoriaTi/consultoriaVendetudo360.git
+# Clonar o repositório
+git clone https://github.com/animoConsultoriaTi/consultoriaVendetudo360.git
 
-	# Entrar no diretório
-	cd consultoriaVendetudo360
+# Entrar no diretório
+cd consultoriaVendetudo360
 
-	# Abrir VSCode
-	code .
+# Abrir VSCode
+code .
 
-	# Instalar Dependências
-	npm install
+# Instalar Dependências
+npm install
 ```
 
 ## Editar Projeto
 
 ```cl
-	# Desenvolvimento
-	npx run dev
+# Desenvolvimento
+npx run dev
 
-	# Build Final
-	npm run build
+# Build Final
+npm run build
 ```
 
 ## Commitar
