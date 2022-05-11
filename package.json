@@ -1,0 +1,30 @@
+{
+  "name": "vendetudo360",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/animoConsultoriaTi/consultoriaVendetudo360.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/animoConsultoriaTi/consultoriaVendetudo360/issues"
+  },
+  "homepage": "https://github.com/animoConsultoriaTi/consultoriaVendetudo360#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
