@@ -1,12 +1,11 @@
-//Vars
+//---------- VARS ----------//
 :root {
   --color-primary: #222222;
   --color-secondary: #fafafa;
   --color-elements: #3f3f46;
-  --default-font-family: "Montserrat", sans-serif;
 }
 
-// Reset
+//---------- RESET ----------//
 * {
   margin: 0;
   padding: 0;
@@ -54,89 +53,115 @@ button {
   cursor: not-allowed;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
+  max-width: 1440px;
+  padding: 0 2rem ;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 72px;
-  width: 1440px 100%;
-  border: 1px solid rgba(34, 34, 34, 0.5);
-  border-left: transparent;
-  border-right: transparent;
-  border-top: transparent;
 }
 
-.logo-container {
-  margin-left: 159px;
-  display: flex;
-}
+//---------- HEADER ----------//
+header {
+  border-bottom: 1px solid rgb(34, 34, 34, .3);
+  .left-items {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
 
-.logo {
-  text-decoration: solid;
-  color: var(--color-primary);
-  background-color: var(--color-primary);
-  font-weight: 800;
-  font-style: normal;
-  padding: 10px 14px;
-  font-size: 18px;
-  border-radius: 50%;
-}
-.menu {
-  display: flex;
-  justify-content: space-between;
-}
+    @media(max-width: 879px) {
+      gap: 0;
+    }
 
-.opcoes-menu {
-  list-style: none;
-  display: flex;
-  padding-left: 0px;
-}
+    nav {
+      height: 4.5rem;
 
-ul {
-  a {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-family: var(--default-font-family);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 0 10px 25px 10px;
-  }
-  a:hover {
-    border: 1px solid var(--color-primary);
-    border-top: transparent;
-    border-right: transparent;
-    border-left: transparent;
-  }
-}
+      .menu {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+  
+        @media(max-width: 879px) {
+          display: none;
+        }
+  
+          a {
+            display: inline-flex;
+            height: 4.5rem;
+            align-items: center;
+            position: relative;
+            color: var(--color-primary);
+            font-family: var(--default-font-family);
+            font-weight: 500;
+            line-height: 130%;
+  
+            &::after {
+              content: "";
+              display: block;
+              width: 0%;
+              height: 2px;
+              position: absolute;
+              bottom: 0;
+              background: var(--color-primary);
+              border-radius: 2px;
+              transition: .3s;
+            }
+            &:hover{
+              &::after {
+                width: 100%;
+              }
+            }
+          }      
+        }
+      }
+    }
+    .contact-icons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-secondary);
+        background-color: var(--color-primary);
+        transition: .3s;
+        
+        &.square {
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: .5rem;
+          
+          @media(max-width: 879px) {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
 
-.icons {
-  display: flex;
-  justify-items: center;
-  margin-right: 159px;
-  a {
-    text-decoration: none;
-    color: var(--color-secondary);
-    background-color: var(--color-primary);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-    margin: 0 5px 0px 5px;
-  }
-  .instagram {
-    padding: 10px 14px;
-    font-size: 18px;
-    border-radius: 50%;
-  }
-  .facebook {
-    padding: 10px 14px;
-    font-size: 18px;
-    border-radius: 30%;
-  }
-  .phone {
-    padding: 10px 14px;
-    font-size: 18px;
-    border-radius: 30%;
+        &.circle {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+
+          @media(max-width: 879px) {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+        }
+
+        &:hover {
+          filter: brightness(.7);
+        }
+    }
   }
 }
