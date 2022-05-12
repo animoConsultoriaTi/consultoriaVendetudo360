@@ -1,7 +1,7 @@
 <h1 align="center">
   Vende Tudo 360
 </h1>
-<p align="center">[Design Figma](https://www.figma.com/file/oJK5J0je0TqcpoAP97Xljj/VendeTudo360?node-id=0%3A1)</p> 
+<a align="center" href="https://www.figma.com/file/oJK5J0je0TqcpoAP97Xljj/VendeTudo360?node-id=0%3A1">Design Figma</a>
 
 ## Iniciar Projeto
 
