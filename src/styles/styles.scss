@@ -135,7 +135,7 @@ header {
         justify-content: center;
         color: var(--color-secondary);
         background-color: var(--color-primary);
-        transition: .3s;
+        transition: filter .3s;
         
         &.square {
           width: 2.5rem;
