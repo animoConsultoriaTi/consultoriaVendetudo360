@@ -59,6 +59,38 @@ ul {
 
 a {
   text-decoration: none;
+    &.square {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        transition: filter 0.3s;
+        @media (max-width: 879px) {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &.circle {
+        width: 3rem;
+        height: 3rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: filter 0.3s;
+        
+        @media (max-width: 879px) {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    &:hover {
+        filter: brightness(0.7);
+    }
 }
 
 .container {
@@ -66,6 +98,29 @@ a {
   padding: 0 2rem;
   margin: 0 auto;
   display: flex;
+}
+
+.call-to-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 223px;
+  height: 51px;
+  border-radius: .5rem;
+  transition: filter .3s;
+
+  &:hover {
+    filter: brightness(0.7);
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-weight: 600;
+  }
 }
 
 //---------- HEADER ----------//
@@ -133,40 +188,14 @@ header {
     align-items: center;
     gap: 1rem;
     a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
       color: var(--color-secondary);
       background-color: var(--color-primary);
       transition: filter 0.3s;
-
-      &.square {
-          width: 2.5rem;
-          height: 2.5rem;
-          border-radius: 0.5rem;
-          @media (max-width: 879px) {
-              width: 2rem;
-              height: 2rem;
-          }
-      }
-
-      &.circle {
-          width: 3rem;
-          height: 3rem;
-          border-radius: 50%;
-          @media (max-width: 879px) {
-              width: 2.5rem;
-              height: 2.5rem;
-          }
-      }
-
-      &:hover {
-          filter: brightness(0.7);
-      }
     }
   }
 }
 
+//---------- FOOTER ----------//
 footer {
   background-color: var(--color-primary);
   color: var(--color-secondary);
@@ -230,146 +259,103 @@ footer {
   }
 }
 
-.container {
-  display: block;
-}
-.faq {
-  display: flex;
-  flex-wrap: wrap;
-}
+#about {
+  padding: 2.5rem 0;
+  margin-top: 73px;
 
-.ask {
-  display: flex;
-  border: 2px solid #9CA3AF;
-  padding: 27px 32px;
-  margin: 16px;
-  border-radius: 8px;
-  .icon-plus {
-    margin-left: 27px;
+  .content {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 2rem 2rem 0 2rem;
+    padding: 0 2rem;
+    position: relative;
+
+    @media (max-width: 879px) {
+      flex-direction: column;
+      padding-bottom: 2.5rem;
+
+      .seal-icon {
+        display: none;
+      }
+      .circle {
+        width: 3rem;
+        height: 3rem;
+      }
+  }
+
+    .business-image {
+      flex-shrink: 0;
+      width: 320px;
+      height: 387px;
+      background-color: var(--color-elements);
+      margin-top: -73px;
+      border-radius: 1rem 1rem 0 0;
+
+      @media (max-width: 425px) {
+        height: 290px;
+      }
+
+      @media (max-width: 879px) {
+        width: min(100%,320px);
+      }
+    }
+
+    .about-text {
+      width: 100%;
+      @media (max-width: 879px) {
+        text-align: center;
+    }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        max-width: 441px;
+        line-height: 1.625rem;
+
+        @media (max-width: 879px) {
+          max-width: 100%;
+      }
+      }
+
+      .buttons-container {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 425px) {
+          flex-direction: column;
+          gap: 2rem;
+        }
+
+        .call-to-action {
+          background: var(--color-secondary);
+          color: var(--color-primary);
+        }
+        .circle {
+          background: var(--color-secondary);
+          color: var(--color-primary);
+
+           &:hover {
+             filter: brightness(0.7);
+           }
+
+           i {
+             font-size: 1.2rem;
+           }
+        }
+      }
+    }
+  }
+  .seal-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
-
-
-                                    
-                                    // .logo-container {
-                                    //     margin-left: 200px;
-                                    //     margin-top: 15px;
-                                    // }
-                                    
-                                    // #container {
-                                    //     display: flex;
-                                    //     color: var(--color-secondary);
-                                    // }
-                                    
-                                    // .info-container {
-                                    //     display: flex;
-                                    //     justify-content: space-between;
-                                    //     margin-top: 58px;
-                                    //     gap: 10rem;
-                                    //     li {
-                                    //         padding-bottom: 15px;
-                                    //     }
-                                    //     a {
-                                    //         text-decoration: none;
-                                    //         color: var(--color-secondary);
-                                    //     }
-                                    //     a:hover {
-                                    //         border: 1px solid var(--color-secondary);
-                                    //         border-top: transparent;
-                                    //         border-left: transparent;
-                                    //         border-right: transparent;
-                                    //     }
-                                    // }
-                                    
-                                    // .rights {
-                                    //     height: 12px;
-                                    //     font-weight: 300;
-                                    //     font-size: 10px;
-                                    //     line-height: 12px;
-                                    //     color: var(--color-secondary);
-                                    //     margin-left: 226px;
-                                    //     margin-top: 50px;
-                                    // }
-                                    
-                                    // //--------------About-------------
-                                    // #about {
-                                    //     width: 1440px;
-                                    //     height: 467px;
-                                    //     margin-top: 441px;
-                                    // }
-                                    
-                                    // .sobre-about {
-                                    //     padding: 0 48px;
-                                    //     display: flex;
-                                    //     gap: 48px;
-                                    //     width: 1119px;
-                                    //     height: 315px;
-                                    //     position: relative;
-                                    //     background: #222222;
-                                    //     border-radius: 32px 32px 0px 32px;
-                                    //     .iconeinsta {
-                                    //         width: 48px;
-                                    //         height: 48px;
-                                    //         margin-left: 550px;
-                                    //         background-color: #fafafa;
-                                    //         margin-top: -53px;
-                                    //         border-radius: 25px;
-                                    //         i.icon-instagram {
-                                    //             position: absolute;
-                                    //             color: #222222;
-                                    //             margin-top: 16px;
-                                    //             margin-left: 16px;
-                                    //         }
-                                    //         .logo-icone {
-                                    //             position: absolute;
-                                    //             margin-top: 0;
-                                    //         }
-                                    //     }
-                                    //     .foto {
-                                    //         width: 320px;
-                                    //         height: 387px;
-                                    //         border: 1px solid rgba(34, 34, 34, 0.5);
-                                    //         margin-top: -73px;
-                                    //         background: #3F3F46;
-                                    //         border-radius: 16px 16px 0px 0px;
-                                    //     }
-                                    //     .texto {
-                                    //         width: 441px;
-                                    //         color: #FAFAFA;
-                                    //         margin: 32px;
-                                    //         h1 {
-                                    //             font-weight: 600;
-                                    //             font-size: 48px;
-                                    //         }
-                                    //         p {
-                                    //             font-weight: 400;
-                                    //             font-size: 16px;
-                                    //             line-height: 26px;
-                                    //         }
-                                    //         .botaowpp {
-                                    //             margin-top: 30px;
-                                    //             display: flex;
-                                    //             align-items: center;
-                                    //             gap: 16px;
-                                    //             width: 223px;
-                                    //             height: 51px;
-                                    //             background-color: #FAFAFA;
-                                    //             justify-content: center;
-                                    //             text-decoration: none;
-                                    //             color: #222222;
-                                    //             border-radius: 8px;
-                                    //             p {
-                                    //                 font-family: 'Montserrat';
-                                    //                 font-style: normal;
-                                    //                 font-weight: 600;
-                                    //                 font-size: 16px;
-                                    //                 line-height: 26px;
-                                    //                 color: #222222;
-                                    //             }
-                                    //             i.icon-whatsapp {
-                                    //                 font-size: 24px;
-                                    //                 margin-left: 16px;
-                                    //             }
-                                    //         }
-                                    //     }
-                                    // }
