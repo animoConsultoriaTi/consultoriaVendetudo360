@@ -359,3 +359,23 @@ footer {
     right: 0;
   }
 }
+
+.container {
+  display: block;
+  text-align: center;
+}
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ask {
+  display: flex;
+  border: 2px solid #9CA3AF;
+  padding: 27px 32px;
+  margin: 16px;
+  border-radius: 8px;
+  .icon-plus {
+    margin-left: 27px;
+  }
+}
