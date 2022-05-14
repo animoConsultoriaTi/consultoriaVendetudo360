@@ -359,3 +359,78 @@ footer {
     right: 0;
   }
 }
+
+#home {
+
+  .buttons-container {
+    margin-top: 3rem;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: 223px;
+      height: 51px;
+      border-radius: .5rem;
+      transition: filter .3s;
+      background-color: var(--color-primary);
+      color: var(--color-secondary); 
+    }
+
+    .marketplace {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: 223px;
+      height: 51px;
+      border-radius: .5rem;
+      border:solid 2px;
+      transition: filter .3s;
+      background-color: white;
+      color: var(--color-primary); 
+    }
+  }
+
+  .home-text {
+    width: 100%;
+    margin-top: 6rem;
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 800;
+    }
+
+    p {
+      max-width: 441px;
+      line-height: 1.625rem;
+    }  
+  }
+
+  .home-image {
+    flex-shrink: 0;
+    width: 350px;
+    height: 350px;
+    background-color: var(--color-elements);
+    margin-top: 160px;
+    border-radius: 200px;
+    margin-right: -180px;
+    z-index: 1;
+  }
+
+  .home-content {
+    width: 650px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    position: relative;
+    margin-top: 30px;
+  }
+}
