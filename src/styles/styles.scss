@@ -413,37 +413,82 @@ header {
 
 #questions {
   .container {
+    display: block;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
+
+  .questions-info {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 600;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 10rem;
+        height: 2px;
+        border-radius: 1px;
+        background-color: var(--color-primary);
+        margin: 1rem auto;
+      }
+    }
+
+  }
   .questions-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     row-gap: 1.5rem;
     column-gap: 2rem;
     justify-content: center;
 
-    .question {
-      padding: 1.75rem 2rem;
-      width: 526px;
-      height: 80px;
-      border: 2px solid var(--color-primary);
-      border-radius: .5rem;
-      overflow: hidden;
-      transition: color .3s;
+    @media (max-width: 687px) {
+      grid-template-columns: 1fr;
+    }
 
-      &.active {
-        height: auto;
+    .question {
+      flex-basis: 526px;
+      max-height: 80px;
+      overflow: hidden;
+      padding: 0 2rem 0 2rem;
+      border: 2px solid var(--color-elements);
+      border-radius: .5rem;
+      transition: max-height .3s;
+      position: relative;
+
+      &.open {
+        max-height: 100%;
+
+        & .icon-plus {
+          transform: rotate(135deg);
+        }
+
+        @media( max-width: 469px) {
+          max-height: 250px;
+        }
       }
 
       .question-ask {
+        width: 100%;
         display: flex;
+        padding: 0 2rem;
         align-items: center;
         justify-content: space-between;
+        position: absolute;
+        top: 27px;
+        left: 0;
+
+        @media (max-width: 337px) {
+          top: 21px;
+        }
 
         i {
           font-size: 1.5rem;
           cursor: pointer;
+          transition: transform .3s;
 
           &:hover {
             color: #3f3f46;
@@ -452,7 +497,8 @@ header {
       }
 
       .question-ans {
-        margin-top: 2rem;
+        margin-top: 5.4rem;
+        padding-bottom: 2.1rem;
       }
     }
   }

@@ -1,5 +1,15 @@
 import './styles/styles.scss';
 
-const questions = document.querySelectorAll('.question');
+const startQuestionsAccordion = () => {
+  const questions = document.querySelectorAll('.question');
 
-console.log(questions.);
+  questions.forEach((question) => {
+    const questionTargetButton = question.querySelector('.icon-plus');
+
+    questionTargetButton.addEventListener('click', () => {
+      question.classList.toggle('open');
+    });
+  });
+};
+
+startQuestionsAccordion();
