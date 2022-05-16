@@ -95,7 +95,8 @@ a {
 
 .container {
   max-width: 1440px;
-  padding: 0 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin: 0 auto;
   display: flex;
 }
@@ -259,6 +260,7 @@ footer {
   }
 }
 
+//---------- ABOUT ----------//
 #about {
   padding: 2.5rem 0;
   margin-top: 73px;
@@ -317,10 +319,11 @@ footer {
       p {
         max-width: 441px;
         line-height: 1.625rem;
+        font-size: 1rem;
 
         @media (max-width: 879px) {
           max-width: 100%;
-      }
+        }
       }
 
       .buttons-container {
@@ -404,4 +407,113 @@ footer {
       }
     }
    }
+}
+//---------- HOME ----------//
+#home {
+
+  .container {
+    justify-content:space-between;
+    align-items: center;
+
+    @media (max-width: 1032px) {
+      justify-content:center;
+    }
+  }
+
+  .home-text {  
+    max-width:474px;
+    margin-left: 2rem;
+
+    @media (max-width: 1032px) {
+      padding: 8.75rem 0 8.75rem 0;
+      max-width: 100%;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media(max-width: 475px) {
+      padding: 4.25rem 0 4.25rem 0;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 900;
+
+      @media (max-width:475px) {
+        font-size:3rem;
+      }
+    }
+
+    p {
+      line-height: 1.625rem;
+      
+    }  
+  }
+
+  .buttons-container {
+    margin-top: 3rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+
+    @media (max-width: 474px) {
+      justify-content:center;
+    }
+    
+    .call-to-action {
+      background: var(--color-primary);
+      color: var(--color-secondary);
+    }
+
+    .marketplace {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: 175px;
+      height: 51px;
+      border-radius: .5rem;
+      border: 2px solid var(--color-primary);
+      color: var(--color-primary);
+      font-weight: 600;
+      transition: background .3s, color .3s;
+
+      &:hover {
+        background: var(--color-primary);
+        color: var(--color-secondary);
+        filter: brightness(1);
+      }
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+
+  .home-image-container {
+    width: 364px;
+    height: 561px;
+    background: var(--color-primary);
+    margin-right: -4rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+
+    @media (max-width: 1032px) {
+      display: none;
+    }
+
+    .home-image {
+      width: 360px;
+      height: 360px;
+      background: var(--color-elements);
+      border-radius: 50%;
+      position: absolute;
+      left: -11.5rem;
+    }
+  }
 }
