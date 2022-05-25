@@ -6,37 +6,24 @@
 
 [Design - Figma](https://www.figma.com/file/oJK5J0je0TqcpoAP97Xljj/VendeTudo360?node-id=0%3A1)
 
-## Iniciar Projeto
 
-```cl
-# Clonar o repositório
-git clone https://github.com/animoConsultoriaTi/consultoriaVendetudo360.git
+## 🛠️ Construído com
+ <div dir="auto"> 
+  <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"><img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"><img align="center"  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"><img align="center"  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" style="max-width: 100%;"></a>  
+  <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"><img align="center"  height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" style="max-width: 100%;"></a>  
 
-# Entrar no diretório
-cd consultoriaVendetudo360
+<br>
 
-# Abrir VSCode
-code .
+## ✒️ Autores
 
-# Instalar Dependências
-npm install
-```
+Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-## Editar Projeto
+* **Renan Figueiredo da Silva** - *Tech Leader* - [renan-fig](https://github.com/renan-fig)
+* **Welton Nogueira** - *Main Developer* - [NogueiraWelton](https://github.com/NogueiraWelton)
+* **Carol Canelas** - *Developer* - [caroolcanelas](https://github.com/caroolcanelas)
+* **Matthew Araujo** - *Developer* - [MatthewAraujo](https://github.com/MatthewAraujo)
+* **Nathan Barbosa** - *Developer* - [Nathan-Barbosa](https://github.com/Nathan-Barbosa)
+* **Roberto Garrahan** - *Developer* - [RobertoGarrahan](https://github.com/RobertoGarrahan)
 
-```cl
-# Desenvolvimento
-npm run dev
-
-# Build Final
-npm run build
-```
-
-## Commitar
-
-```cl
-git checkout <suaBranch>
-git add *
-git commit -m "<Alteração>"
-git push origin <suaBranch>
-```
