@@ -4,7 +4,7 @@
 
 ## Projeto
 
-[Design - Figma](https://www.figma.com/file/oJK5J0je0TqcpoAP97Xljj/VendeTudo360?node-id=0%3A1)
+[Design - Figma](https://www.figma.com/file/8A6YFTufUu7eUoVve8lsXu/Vendetudo360?node-id=0%3A1)
 
 
 ## 🛠️ Construído com
