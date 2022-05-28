@@ -350,6 +350,7 @@ header {
       margin-top: -73px;
       border-radius: 1rem 1rem 0 0;
       box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.25);
+      object-fit: cover;
 
       @media (max-width: 425px) {
         height: 290px;
