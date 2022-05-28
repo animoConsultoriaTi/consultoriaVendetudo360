@@ -1,8 +1,11 @@
 //---------- VARS ----------//
 :root {
-  --color-primary: #222222;
-  --color-secondary: #fafafa;
-  --color-elements: #3f3f46;
+  --color-primary: #05060A;
+  --color-secondary: #FAFAFA;
+  --brand: #5DE2E9;
+  --brand-dark: #2F969C;
+  --brand-add: #E8945D;
+
 }
 
 //---------- RESET ----------//
@@ -13,6 +16,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   @media (max-width: 1080px) {
       font-size: 93.75%;
   }
@@ -89,7 +93,7 @@ a {
     }
 
     &:hover {
-        filter: brightness(0.7);
+        filter: brightness(0.9);
     }
 }
 
@@ -112,7 +116,7 @@ a {
   transition: filter .3s;
 
   &:hover {
-    filter: brightness(0.7);
+    filter: brightness(0.9);
   }
 
   i {
@@ -190,7 +194,7 @@ header {
     gap: 1rem;
     a {
       color: var(--color-secondary);
-      background-color: var(--color-primary);
+      background-color: var(--brand-dark);
       transition: filter 0.3s;
     }
   }
@@ -202,6 +206,8 @@ header {
   .container {
     justify-content:space-between;
     align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 
     @media (max-width: 1032px) {
       justify-content:center;
@@ -251,7 +257,7 @@ header {
     }
     
     .call-to-action {
-      background: var(--color-primary);
+      background: var(--brand-dark);
       color: var(--color-secondary);
     }
 
@@ -263,13 +269,13 @@ header {
       width: 175px;
       height: 51px;
       border-radius: .5rem;
-      border: 2px solid var(--color-primary);
-      color: var(--color-primary);
+      border: 2px solid var(--brand-dark);
+      color: var(--brand-dark);
       font-weight: 600;
       transition: background .3s, color .3s;
 
       &:hover {
-        background: var(--color-primary);
+        background: var(--brand-dark);
         color: var(--color-secondary);
         filter: brightness(1);
       }
@@ -284,7 +290,7 @@ header {
   .home-image-container {
     width: 364px;
     height: 561px;
-    background: var(--color-primary);
+    background: var(--brand);
     margin-right: -4rem;
     display: flex;
     align-items: center;
@@ -302,6 +308,7 @@ header {
       border-radius: 50%;
       position: absolute;
       left: -11.5rem;
+      box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     }
   }
 }
@@ -316,7 +323,7 @@ header {
     display: flex;
     gap: 4rem;
     align-items: center;
-    background-color: var(--color-primary);
+    background-color: var(--brand-dark);
     color: var(--color-secondary);
     border-radius: 2rem 2rem 0 2rem;
     padding: 0 2rem;
@@ -342,6 +349,7 @@ header {
       background-color: var(--color-elements);
       margin-top: -73px;
       border-radius: 1rem 1rem 0 0;
+      box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.25);
 
       @media (max-width: 425px) {
         height: 290px;
@@ -384,15 +392,15 @@ header {
         }
 
         .call-to-action {
-          background: var(--color-secondary);
-          color: var(--color-primary);
+          background: var(--brand-add);
+          color: var(--color-secondary);
         }
         .circle {
-          background: var(--color-secondary);
-          color: var(--color-primary);
+          background: var(--brand-add);
+          color: var(--color-secondary);
 
            &:hover {
-             filter: brightness(0.7);
+             filter: brightness(0.9);
            }
 
            i {
@@ -454,7 +462,7 @@ header {
       max-height: 80px;
       overflow: hidden;
       padding: 0 2rem 0 2rem;
-      border: 2px solid var(--color-elements);
+      border: 2px solid var(--color-primary);
       border-radius: .5rem;
       transition: max-height .3s;
       position: relative;
@@ -506,7 +514,7 @@ header {
 
 //---------- FOOTER ----------//
 footer {
-  background-color: var(--color-primary);
+  background-color: var(--brand-dark);
   color: var(--color-secondary);
   padding: 1rem 0 2rem 0;
 
